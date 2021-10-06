@@ -14,10 +14,7 @@
         }
         
         .banner {
-            background-image: url(https://i.imgur.com/h7qsCTQ.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(to left, #4b79a1, #283e51);
             padding: 100px 0;
         }
         
@@ -38,14 +35,34 @@
         
         .faq .card {
             margin-bottom: 15px;
-            background: transparent;
             border: none;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transition: all .5s ease-in-out;
+        }
+        
+        .faq .card:hover {
+            background: #283e51;
+            color: #fff;
+        }
+        
+        .faq .card:hover h5 button {
+            color: #fff;
         }
         
         .faq .card h5 button {
-            color: black;
+            color: #283e51;
             background: none;
-            text-decoration: underline;
+            font-size: 20px;
+        }
+        
+        .faq .card h5 button:hover {
+            text-decoration: none;
+        }
+        
+        .faq .card .card-body {
+            padding: 0 1rem 1rem;
+            font-size: 16px;
+            line-height: 30px;
         }
     </style>
 </head>
@@ -332,7 +349,7 @@
                 </p>
             </div>
             <div class="row align-items-center justify-content-between">
-                <div data-aos-duration="1500" data-aos="zoom-in-right" class="col-sm-12 col-md-12 col-lg-6 mb-5 mb-md-0">
+                <div data-aos-duration="1500" data-aos="zoom-in-right" class="col-sm-12 col-md-12 col-lg-7 mb-5 mb-md-0">
                     <div id="accordion">
                         <div class="card">
                             <h5 class="mb-0">
@@ -374,7 +391,7 @@
                         <div class="card">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        What size would the iPhone 6s and iPhone 6s Plus be?
+                                What size would the iPhone 6s and iPhone 6s Plus be?
                               </button>
                             </h5>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
