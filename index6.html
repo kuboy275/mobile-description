@@ -1,0 +1,670 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone 6plus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+<style>
+    .banner {
+        background-image: url("https://i.imgur.com/JlQ556n.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .box-tech i {
+        font-size: 45px;
+    }
+    
+    .box-tech p {
+        color: #dea1a1;
+    }
+    
+    .content-intro {
+        line-height: 35px;
+        color: #777;
+    }
+    
+    .help-4g p {
+        line-height: 35px;
+    }
+    
+    .chip p,
+    h2 {
+        color: #777;
+    }
+    
+    .box-spec {
+        box-shadow: 0 0 0 1px #d8d8d8;
+    }
+    
+    .box-spec h4 {
+        background: #3c9bcd;
+        padding: 10px;
+    }
+    
+    .bdbot {
+        border-bottom: 1px solid #d8d8d8;
+    }
+    
+    .bg-ct {
+        background: #f6f6f6;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .respon-help {
+            text-align: center;
+        }
+    }
+    
+    .compatible {
+        background: #F8F9FA;
+        padding: 50px;
+    }
+    
+    .faq {
+        background: #370d0d;
+    }
+    
+    .faq .card-body {
+        color: white;
+    }
+    
+    .faq .card-header {
+        background: none;
+        padding: 0;
+        margin: 15px 0;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .faq .card-header button {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .faq .card {
+        border: none;
+        background: none;
+    }
+    
+    .btn-link.focus,
+    .btn-link:focus {
+        text-decoration: none;
+        box-shadow: none;
+    }
+    
+    .btn-link {
+        color: white;
+    }
+    
+    .btn-link:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .faq-section {
+        background: #fdfdfd;
+        min-height: 100vh;
+        padding: 10vh 0 0;
+    }
+    
+    .faq-title h2 {
+        position: relative;
+        margin-bottom: 45px;
+        display: inline-block;
+        font-weight: 600;
+        line-height: 1;
+    }
+    
+    .faq-title h2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 60px;
+        height: 2px;
+        background: #E91E63;
+        bottom: -25px;
+        margin-left: -30px;
+    }
+    
+    .faq-title p {
+        padding: 0 190px;
+        margin-bottom: 10px;
+    }
+    
+    .faq {
+        background: #FFFFFF;
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+    }
+    
+    .faq .card {
+        border: none;
+        background: none;
+        border-bottom: 1px dashed #CEE1F8;
+    }
+    
+    .faq .card .card-header {
+        padding: 0px;
+        border: none;
+        background: none;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .faq .card .card-header:hover {
+        background: rgba(233, 30, 99, 0.1);
+        padding-left: 10px;
+    }
+    
+    .faq .card .card-header .faq-title {
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #3B566E;
+        text-decoration: none !important;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .faq .card .card-header .faq-title .badge {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 14px;
+        float: left;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        text-align: center;
+        background: #E91E63;
+        color: #fff;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    
+    .faq .card .card-body {
+        padding: 30px;
+        padding-left: 35px;
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6F8BA4;
+        line-height: 28px;
+        letter-spacing: 1px;
+        border-top: 1px solid #F3F8FF;
+    }
+    
+    .faq .card .card-body p {
+        margin-bottom: 14px;
+    }
+    
+    @media (max-width: 991px) {
+        .faq {
+            margin-bottom: 30px;
+        }
+        .faq .card .card-header .faq-title {
+            line-height: 26px;
+            margin-top: 10px;
+        }
+    }
+    
+    .spec-sec {
+        background: #F8F9FA;
+    }
+    
+    .faq-section {
+        background-image: url("https://i.imgur.com/AxRa062.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-attachment: fixed;
+    }
+</style>
+
+<body>
+    <div class="banner">
+        <div class="container-fluid py-5">
+            <h1 class="text-white text-center">Apple iPhone 6 Plus</h1>
+            <div class="row">
+                <div class="col-lg-4 pt-5">
+                    <p class="text-center">
+                        <img class="img-fluid pt-4" height="" src="https://i.imgur.com/ZpSf5s2.png" alt="">
+                    </p>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4 pt-5">
+                    <p class="text-center">
+                        <img class="img-fluid pt-4" height="" src="https://i.imgur.com/VtOhiZL.png" alt="">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section class="py-5">
+        <h1 class="text-center">Introduction</h1>
+        <div class="container">
+            <p class="content-intro">Apple caved to market pressure and created a phablet. This may sound as blasphemy
+                but it's not the first time Cupertino is seen reacting to rivals getting too confident, too aggressive -
+                too close for comfort. The first iPad mini had to respond back in its time to the rise of the compact
+                Android tablets. That was different though - and not in a way perhaps that Apple will like.
+                <br>
+                The iPad mini was very much in a league of its own, by virtue of its screen size and aspect ratio. The
+                phablet, on the other hand, is dragged into a tougher game away from home. For the first time, Apple is
+                playing by someone else's rules. They're in it to win though. Second year in a row, users will be
+                choosing from a pair, but this time it's a pair that doesn't have a straightforward first choice this
+                time around. It's an iPhone and a bigger - better? - version of it.
+                <br>
+                The iPhone 6 Plus marks the biggest leap in iPhones since the iPhone 4 and will have implications for
+                the iPads as well. With a large 5.5" screen to straddle the difference between the iPhone and the iPad
+                Air.
+            </p>
+            <p class="text-center"><img class="img-fluid" src="https://i.imgur.com/3ohGQCV.png?1" alt=""></p>
+            <p class="content-intro">Apple abandoned scaling the original 320 x 480 resolution by various factors and
+                jumped to an industry standard of 1080p. This means that for the first time the iPhone can show FullHD
+                video at 1:1 and also represents the first jump in pixel density since the iPhone 4 (even the smaller
+                iPhone 6 is still at 326ppi).
+                <br>
+                The screen is the defining feature of the iPhone 6 Plus but another important update is the addition of
+                Optical Image Stabilization to the camera, which has otherwise only seen iterative updates for the last
+                four years.
+            </p>
+        </div>
+    </section> -->
+    <section class="my-5 chip">
+        <h1 class="text-center">
+            Processor Apple A8</h1>
+        <p class="text-center">iPhone 6 Plus is equipped with the latest Apple A8 64-bit processor.
+            <br> With 2 billion transistors built on 20nm process, this is considered the most powerful processor of "Apple defect".
+        </p>
+        <p class="text-center">
+            <img class="img-fluid" src="https://i.imgur.com/DpDe9tP.jpg" alt="">
+        </p>
+        <!-- <h2 class="text-center mt-5">Breakthrough Metal , Monolithic Design</h2>
+        <p class="text-center">
+            <img class="img-fluid" src="https://i.imgur.com/lzeMfjW.jpg" alt="">
+        </p> -->
+    </section>
+    <section class="my-5 compatible">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img width="100%" src="https://i.imgur.com/odIbLt1.jpg?1" alt="">
+
+                </div>
+                <div class="col-lg-6 p-5 help-4g">
+                    <h5>Compatible with 4G</h5>
+                    <h1 class="">
+                        Enhance your 4G experience
+                    </h1>
+                    <p class="">Offers speeds about 10 times faster than current 3G or third-generation networks.
+                        <br> Its higher data rates could make smartphones more of a PC equivalent, giving them better gaming and multimedia capabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="title-tech text-center mt-4">
+            IPHONE 6+ Key Specs
+        </h1>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-6 box-tech my-5">
+                    <div class="row">
+                        <div class="col-md-3 respon-help">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="col-md-9 respon-help">
+                            <h5>DISPLAY</h5>
+                            <p>5.50-inch (1080x1920)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 box-tech my-5">
+                    <div class="row">
+                        <div class="col-md-3 respon-help">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="col-md-9 respon-help">
+                            <h5>PROSESSOR</h5>
+                            <p>Apple A8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 box-tech my-5">
+                    <div class="row">
+                        <div class="col-md-3 respon-help">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="col-md-9 respon-help">
+                            <h5>REAR CAMERA</h5>
+                            <p>8MP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 box-tech my-5">
+                    <div class="row">
+                        <div class="col-md-3 respon-help">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="col-md-9 respon-help">
+                            <h5>MEMORY</h5>
+                            <p>1GB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 box-tech my-5">
+                    <div class="row">
+                        <div class="col-md-3 respon-help">
+                            <i class="fas fa-charging-station"></i>
+                        </div>
+                        <div class="col-md-9 respon-help">
+                            <h5> BATTERY CAPACITY</h5>
+                            <p>2915mAh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 box-tech my-5">
+                    <div class="row">
+                        <div class="col-md-3 respon-help">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="col-md-9 respon-help">
+                            <h5>OS</h5>
+                            <p>iOS 8.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 spec-sec">
+        <h1 class="text-center my-5">
+            SPECIFICATIONS
+        </h1>
+        <div class="container">
+            <div class="box-spec">
+                <h4 class="text-white">Display</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Screen size (inches):
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        5.50
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Touchscreen:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Yes
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Resolution:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        1080x1920 pixels
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Pixels per inch (PPI):
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        401
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">HARDWARE</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Processor:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        one-core
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Processor make:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Apple A8
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        RAM:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        1GB
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Expandable storage:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        No
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">Camera</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Rear camera:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        8-megapixel
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Rear flash:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Dual LED
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Front camera:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        1.2-megapixel
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">Connectivity</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Wi-Fi standards supported:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        802.11 a/b/g/n/ac
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Bluetooth:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Yes, v 4.20
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Headphones:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        3.5mm
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        SIM Type:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Nano-SIM
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">Software</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Operating system:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        iOS 8.0
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <section class="py-5">
+        <img class="img-fluid" width="100%" src="https://i.imgur.com/eP9j7YO.jpg" alt="">
+
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <!-- ***** FAQ Start ***** -->
+                <div class="col-md-6 offset-md-3">
+
+                    <div class="faq-title text-center pb-3">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3">
+                    <div class="faq" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                        <span class="badge">1</span> Apple iPhone - View / Extend Battery Life
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Here's how to see charging status, battery life and which apps or processes use your iPhone's battery.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-2">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                        <span class="badge">2</span> Apple - How to Clean Your iPhone / iPad
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Here's how to properly clean / disinfect / sanitize your iPhone or iPad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-3">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                        <span class="badge">3</span> Apple iPhone - Turn 4G LTE On / Off
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Here's how to turn the 4G LTE setting for your iPhone on or off.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-4">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                        <span class="badge">4</span> Apple® iPhone® 6 Plus Simulator: Pairing with a Bluetooth® Device
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>See how to pair your iPhone 6 Plus with your Bluetooth device.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-5">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                        <span class="badge">5</span> Apple iPhone - Answer Options
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p> Here's how to send a message or schedule a call back reminder if someone's calling your iPhone and you're not able to answer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js" integrity="sha512-cJ7aOLpXbec1Km9craM6xL6UOdlWf9etIz7f+cwQv2tuarLm3PLb3dv3ZqIK++SE4ui+EE0nWqKB0dOaAOv9gQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>
