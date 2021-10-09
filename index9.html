@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            font-family: 'Noto Sans Display', sans-serif;
+        }
+        
+        .bg-banner {
+            background-image: url(https://i.imgur.com/QLT3U7i.jpg?1);
+            height: 550px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .bg-screen {
+            background-image: url(https://i.imgur.com/G3z7MI1.png?1);
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .banner .icon {
+            font-size: 50px;
+        }
+        
+        .banner .icon .fa-battery-full {
+            transform: rotate(270deg);
+        }
+        
+        .spec-box {
+            border-radius: 15px;
+            padding: 15px 20px;
+            border: 1px solid #b33939;
+            transition: all .5s ease-in;
+            cursor: pointer;
+        }
+        
+        .spec-box:hover {
+            background-color: #b33939;
+        }
+        
+        .spec-box .icon i {
+            font-size: 40px;
+            color: #b33939;
+        }
+        
+        .spec-box:hover .content {
+            color: #fff;
+        }
+        
+        .spec-box .content p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h3>LG Stylo™ 6 </h3>
+                <h1 class="my-3">Join The #StyloLife </h1>
+                <p>Express who you are to the world with the new LG Stylo™ 6 — the device that enhances your #MobileLife, and all the ways you live it. Whether you’re experiencing, creating or sharing content, Stylo gives you unlimited potential, even if
+                    you’re on a limited budget. From the 6.8" FHD+ FullVision™ Display to three spectacular rear cameras and the built-in stylus pen, celebrate all the ways you live the #StyloLife.
+                </p>
+            </div>
+        </div>
+        <div class="bg-banner"></div>
+        <div class="container py-5">
+            <div class="row align-items-end justify-content-center">
+                <div class="col-6 col-md-4 text-center">
+                    <div class="icon mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h6>6.8" FHD+ FullVision™ Display</h6>
+                </div>
+                <div class="col-6 col-md-4 text-center border-left border-right">
+                    <div class="icon mb-4">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h6>13 MP Selfie Camera </h6>
+                </div>
+                <div class="col-6 col-md-4 text-center mt-5 mt-md-0">
+                    <div class="icon mb-4">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h6>4,000 mAh Battery</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- screen -->
+    <div class="screen py-5 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="mb-4">Immersive edge-to-edge <br> entertainment experience </h1>
+                <p>
+                    Maximize your view with a 6.8” FHD+ FullVision™ edge-to-edge display that provides total immersion into your favorite movies, shows, games, and content. Plus, Full HD+ resolution delivers a vivid visual experience with clear picture quality.
+                </p>
+            </div>
+        </div>
+        <div class="bg-screen"></div>
+    </div>
+
+    <!-- hardware -->
+    <div class="hardware py-5">
+        <div class="container">
+            <div class="text-center">
+                <div class="h6">3 GB RAM / 64 GB (usable 42GB) ROM* </div>
+                <h1>#LargeLife Memory & Storage</h1>
+                <p>
+                    Let your big ideas flow with 64 GB (useable up to 42GB)* of storage and expandable microSD™ storage. So whether it's the #PhotoLife, #VideoLife, #GamerLife, #GifLife, or #SketchLife, there's plenty of room for it all.
+                </p>
+                <img src="https://i.imgur.com/DAAg5Yz.jpg?1" alt="" class="img-fluid mt-5">
+            </div>
+        </div>
+    </div>
+
+    <!-- camera -->
+    <div class="camera py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6>Triple Camera System </h6>
+                <h1>Capture Every #PhotoLife Moment </h1>
+                <p>
+                    See the world through not one, but three lenses. The triple rear camera system captures the smallest of details and wide, expansive views, all while keeping what matters in focus.
+                </p>
+            </div>
+        </div>
+        <img src="https://i.imgur.com/CpBoHXi.jpg?1" alt="" class="img-fluid">
+    </div>
+
+    <!-- battery -->
+    <div class="battery bg-light py-5">
+        <div class="container">
+            <div class="text-center">
+                <h1>Built for the #LongLife </h1>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <img src="https://i.imgur.com/KrEjAGy.jpg?1" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    <h3>4,000 mAh Battery </h3>
+                    <p>
+                        When it comes to living the #StyloLife, your passions never cease and neither should your battery. Stream, create, work, and play seamlessly with the 4,000 mAh battery that powers on. It's all the fuel you need to keep your passions going and going
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pen Controls -->
+
+    <div class="pen py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Scratch Art </h6>
+                    <h1>Uncover Color #ArtLife </h1>
+                    <p>
+                        Create colorful masterpieces by using stylus to “scratch” away at the canvas revealing an array of colors underneath. Challenge your creativity with a tool that inspires you to create endless colorful layers of shareworthy notes and images.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <img src="https://i.imgur.com/VyEztpX.jpg?1" alt="" class="img-fluid mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPEC -->
+    <div class="spec pt-5">
+        <div class="container">
+            <h1 class="text-center mb-5">
+                LG Stylo™ 6 Tech Specs
+            </h1>
+            <div class="row align-items-end justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4"><i class="far fa-calendar-alt"></i></div>
+                        <div class="content">
+                            <h4>Released</h4>
+                            <p>LG Stylo 6 - May 20, 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Display</h4>
+                            <p>6.8 inches, 2460 x 1080 pixels</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Camera</h4>
+                            <p>13 MP (Triple), 13 MP front</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Hardware</h4>
+                            <p>MediaTek Helio P35, 4GB RAM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Storage</h4>
+                            <p>64GB, microSDXC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4">
+                            <i class="fas fa-car-battery"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Battery</h4>
+                            <p>4000 mAh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-5">
+                    <div class="spec-box d-flex align-items-center">
+                        <div class="icon mr-4">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="content">
+                            <h4>OS</h4>
+                            <p>Android 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js" integrity="sha512-cJ7aOLpXbec1Km9craM6xL6UOdlWf9etIz7f+cwQv2tuarLm3PLb3dv3ZqIK++SE4ui+EE0nWqKB0dOaAOv9gQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
