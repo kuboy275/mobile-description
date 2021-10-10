@@ -1,0 +1,705 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    p {
+        color: #8d9398;
+        line-height: 30px;
+        margin-bottom: 0px !important;
+    }
+
+    .look h1 {
+        color: hsla(0, 0%, 0%, .9);
+        left: 0;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        animation: move linear 2000ms infinite;
+    }
+
+    .top-fast {
+        background: black;
+        margin: 10px 39px 0px 40px;
+        padding: 40px;
+    }
+
+    .top-fast h1 {
+        color: white;
+    }
+
+    .top-fast p {
+        color: white;
+    }
+
+    .speci {
+        /* background-color: #9abcd0; */
+        padding: 20px 0;
+    }
+
+    .colum-group {
+        /* float: left; */
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #e8e9ea;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .colum-group-title {
+        padding: 7px 10px;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0 !important;
+    }
+
+    .content-colum {
+        padding: 7px 10px;
+        font-size: 16px;
+    }
+
+    .right-colum {
+        padding: 7px 10px;
+    }
+
+    .border-row {
+        border-top: 1px solid #e8e9ea;
+    }
+
+    @keyframes move {
+        0% {
+            text-shadow:
+                4px -4px 0 hsla(0, 100%, 50%, 1),
+                3px -3px 0 hsla(0, 100%, 50%, 1),
+                2px -2px 0 hsla(0, 100%, 50%, 1),
+                1px -1px 0 hsla(0, 100%, 50%, 1),
+                -4px 4px 0 hsla(180, 100%, 50%, 1),
+                -3px 3px 0 hsla(180, 100%, 50%, 1),
+                -2px 2px 0 hsla(180, 100%, 50%, 1),
+                -1px 1px 0 hsla(180, 100%, 50%, 1);
+        }
+
+        25% {
+            text-shadow:
+                -4px -4px 0 hsla(180, 100%, 50%, 1),
+                -3px -3px 0 hsla(180, 100%, 50%, 1),
+                -2px -2px 0 hsla(180, 100%, 50%, 1),
+                -1px -1px 0 hsla(180, 100%, 50%, 1),
+                4px 4px 0 hsla(0, 100%, 50%, 1),
+                3px 3px 0 hsla(0, 100%, 50%, 1),
+                2px 2px 0 hsla(0, 100%, 50%, 1),
+                1px 1px 0 hsla(0, 100%, 50%, 1);
+        }
+
+        50% {
+            text-shadow:
+                -4px 4px 0 hsla(0, 100%, 50%, 1),
+                -3px 3px 0 hsla(0, 100%, 50%, 1),
+                -2px 2px 0 hsla(0, 100%, 50%, 1),
+                -1px 1px 0 hsla(0, 100%, 50%, 1),
+                4px -4px 0 hsla(180, 100%, 50%, 1),
+                3px -3px 0 hsla(180, 100%, 50%, 1),
+                2px -2px 0 hsla(180, 100%, 50%, 1),
+                1px -1px 0 hsla(180, 100%, 50%, 1);
+        }
+
+        75% {
+            text-shadow:
+                4px 4px 0 hsla(180, 100%, 50%, 1),
+                3px 3px 0 hsla(180, 100%, 50%, 1),
+                2px 2px 0 hsla(180, 100%, 50%, 1),
+                1px 1px 0 hsla(180, 100%, 50%, 1),
+                -4px -4px 0 hsla(0, 100%, 50%, 1),
+                -3px -3px 0 hsla(0, 100%, 50%, 1),
+                -2px -2px 0 hsla(0, 100%, 50%, 1),
+                -1px -1px 0 hsla(0, 100%, 50%, 1);
+        }
+
+        100% {
+            text-shadow:
+                4px -4px 0 hsla(0, 100%, 50%, 1),
+                3px -3px 0 hsla(0, 100%, 50%, 1),
+                2px -2px 0 hsla(0, 100%, 50%, 1),
+                1px -1px 0 hsla(0, 100%, 50%, 1),
+                -4px 4px 0 hsla(180, 100%, 50%, 1),
+                -3px 3px 0 hsla(180, 100%, 50%, 1),
+                -2px 2px 0 hsla(180, 100%, 50%, 1),
+                -1px 1px 0 hsla(180, 100%, 50%, 1);
+        }
+    }
+
+
+
+
+    .faq-section {
+        background: #f8e9e9;
+        min-height: 100vh;
+        padding: 10vh 0 0;
+    }
+
+    .faq-title h2 {
+        position: relative;
+        margin-bottom: 45px;
+        display: inline-block;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .faq-title h2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 60px;
+        height: 2px;
+        background: #E91E63;
+        bottom: -25px;
+        margin-left: -30px;
+    }
+
+    .faq-title p {
+        padding: 0 190px;
+        margin-bottom: 10px;
+    }
+
+    .faq {
+        background: #FFFFFF;
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+    }
+
+    .faq .card {
+        border: none;
+        background: none;
+        border-bottom: 1px dashed #CEE1F8;
+    }
+
+    .faq .card .card-header {
+        padding: 0px;
+        border: none;
+        background: none;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .faq .card .card-header:hover {
+        background: rgba(233, 30, 99, 0.1);
+        padding-left: 10px;
+    }
+
+    .faq .card .card-header .faq-title {
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #3B566E;
+        text-decoration: none !important;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .faq .card .card-header .faq-title .badge {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 14px;
+        float: left;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        text-align: center;
+        background: #E91E63;
+        color: #fff;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .faq .card .card-body {
+        padding: 30px;
+        padding-left: 35px;
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6F8BA4;
+        line-height: 28px;
+        letter-spacing: 1px;
+        border-top: 1px solid #F3F8FF;
+    }
+
+    .faq .card .card-body p {
+        margin-bottom: 14px;
+    }
+
+    @media (max-width: 991px) {
+        .faq {
+            margin-bottom: 30px;
+        }
+
+        .faq .card .card-header .faq-title {
+            line-height: 26px;
+            margin-top: 10px;
+        }
+    }
+</style>
+
+<body>
+
+    <section class="py-5 nature">
+        <h1 class="text-center font-weight-bold">Elegant by nature</h1>
+        <p class="text-center my-3">
+            When style complements functionality. Designed with the strictest attention to detail, the new Samsung
+            <br>
+            Galaxy J3 features a stunning uniform metal finish with zero camera protrusion for superior grip and 2.5D
+            Glass shielding its 5.0” HD display for added durability.
+        </p>
+        <img class="img-fluid pt-4" src="https://i.imgur.com/WsXIKUF.jpg" alt="">
+    </section>
+    <section class="my-5 look">
+        <h1 class="text-center font-weight-bold">Look great in every frame</h1>
+        <p class="text-center my-3">The Samsung Galaxy J3 lets you take bright and vivid selfies every time with more
+            accurate detail even in low
+            light thanks to its front LED and selfie flashes.
+            <br> You can also control the shutter by simple hand gesture.
+        </p>
+        <p class="text-center my-4">
+            <img class="img-fluid" src="https://i.imgur.com/3OBtn0O.jpg" alt="">
+        </p>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h1 class="mt-5 font-weight-bold">Synchronize your world</h1>
+                    <br>
+                    <p>Seamless management for your preferred content. Samsung Cloud lets you backup, sync, restore and
+                        upgrade your data through your Galaxy smartphone so you get access to whatever you need,
+                        whenever and wherever you need it.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="https://i.imgur.com/PdxAU7K.png?1" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="https://i.imgur.com/YwRhia7.png" alt="">
+                </div>
+                <div class="col-md-6 pt-5">
+                    <h1 class="mt-5 font-weight-bold">Hidden for your protection</h1>
+                    <p class="mt-3">Samsung’s Secure Folder is a powerful security solution that lets you creates a
+                        private and fully
+                        encrypted space to store and hide content such as photos, documents and voice recording files
+                        under an additional layer of protection that only you can access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fast">
+        <div class="top-fast">
+            <h1 class="text-center">Full speed ahead</h1>
+            <p class="text-center">Keep usage running at optimal levels. Thanks to 2GB of RAM, 16GB of internal storage
+                and up to 256GB of
+                optional expandable storage capacity with microSD support, the Samsung Galaxy J3 ensures highly
+                responsive and blazingly fast speeds to accelerate your workflow.</p>
+        </div>
+        <p class="text-center">
+            <img class="img-fluid" src="https://i.imgur.com/k7fYlQO.png" alt="">
+        </p>
+    </section>
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h1 class="my-5 font-weight-bold">Dual Messenger</h1>
+                    <p>Customize the way you chat. The Samsung Galaxy J3 allows for the set up of two accounts for the
+                        same Messenger with different purposes. Users can install and easily manage the second Messenger
+                        account simultaneously from the home screen and settings menu.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="https://i.imgur.com/xq9b7v5.png?1" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <h1 class="text-center font-weight-bold">Share life as you see it</h1>
+        <p class="text-center my-3">Its rear 13MP F1.9 camera captures clear photos with enhanced detail in low light
+            while its intuitive
+            interface enables one-handed functionality thanks <br> to its moving shutter button so you can still take
+            the
+            shot while adjusting your pose or framing the scene.</p>
+        <p class="text-center">
+            <img class="img-fluid" src="https://i.imgur.com/YbJ4lm1.jpg" alt="">
+        </p>
+    </section>
+
+    <section class="speci">
+        <div class="container">
+            <h2 class="text-center my-5">Samsung Galaxy J3 - SPECIFICATIONS</h2>
+            <div class="colum-group">
+                <h3 class="colum-group-title">
+                    General
+                </h3>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Model</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            Galaxy J3 (2017)
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Released</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            June 2017
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Form factor</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            Touchscreen
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Battery capacity (mAh)</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            2400
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Colours</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            Black, Gold
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colum-group">
+                <h3 class="colum-group-title">
+                    Display
+                </h3>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Screen size (inches)</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            5.00
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Touchscreen</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            Yes
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Resolution</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            720x1280 pixels
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="colum-group">
+                <h3 class="colum-group-title">
+                    Hardware
+                </h3>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Processor</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            1.4GHz quad-core
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Processor make</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            Samsung Exynos 7570
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">RAM</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            2GB
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Internal Storage</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            16GB
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Expandable storage up to (GB) </h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            256
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colum-group">
+                <h3 class="colum-group-title">
+                    Camera
+                </h3>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Rear Camera</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            13-megapixel
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Rear flash </h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            LED
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row border-row">
+                    <div class="col-md-4 col-sm-4 col-4">
+                        <h5 class="content-colum">Front camera </h5>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8">
+                        <p class="right-colum">
+                            5-megapixel
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <!-- ***** FAQ Start ***** -->
+                <div class="col-md-6 offset-md-3">
+
+                    <div class="faq-title text-center pb-3">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3">
+                    <div class="faq" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1"
+                                        data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                        <span class="badge">1</span>Is Samsung J3 a good phone?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Verdict. If you're on a budget, but still want a reliable smartphone you can feel
+                                        proud to whip out, the Samsung Galaxy J3 is a top option with a good battery and
+                                        decent camera. Just make sure you're getting the 2017 model (not the 2016), as
+                                        the specs are much improved and there's nothing in the price. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-2">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2"
+                                        data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                        <span class="badge">2</span>How old is Samsung J3 phone?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The Samsung Galaxy J3 (2016) (also known as Galaxy J3 V, Galaxy J3 Pro and Galaxy
+                                        Amp Prime) is an Android smartphone manufactured by Samsung Electronics and was
+                                        released on May 6, 2016.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-3">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3"
+                                        data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                        <span class="badge">3</span>Does the Samsung J3 have Internet?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Set up your Samsung Galaxy J3 (2017) Android 7.0 for internet. The internet
+                                        connection is shared by many functions on your phone such as internet browsing,
+                                        receiving email messages and installing apps. You can access the internet as
+                                        soon as you've inserted your SIM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-4">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4"
+                                        data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                        <span class="badge">4</span> Is the Samsung J3 obsolete?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>It's not too difficult to understand why the Galaxy A3 (2016), J1 (2016), and J3
+                                        (2016) have been axed; they're all around two years old at this point and
+                                        they're budget to mid-range devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-5">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5"
+                                        data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                        <span class="badge">5</span> What is a good replacement for Samsung J3?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p> The Samsung Galaxy A10 has a 30% longer battery life than Samsung J3. This is
+                                        will give you plenty of usage between charges. With a handy additional feature,
+                                        you will still be able to operate the phone, even if its battery is low.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-6">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6"
+                                        data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                        <span class="badge">6</span>How long does a Samsung Galaxy J3 last?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>In many of the straight battery tests I've tried, it's performed fine. A
+                                        half-hour of Minecraft drains 9% of the battery, suggesting that it will manage
+                                        around five and a half hours of gaming</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-7">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7"
+                                        data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                                        <span class="badge">7</span> Is the Galaxy J3 waterproof?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The Galaxy J3's 8-megapixel rear-facing camera. ... The J3 claims, however, no
+                                        water-resistance at all.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"
+    integrity="sha512-cJ7aOLpXbec1Km9craM6xL6UOdlWf9etIz7f+cwQv2tuarLm3PLb3dv3ZqIK++SE4ui+EE0nWqKB0dOaAOv9gQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>
