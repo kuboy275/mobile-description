@@ -1,0 +1,589 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<style>
+    .style-pixel p {
+        color: #aeb6be;
+    }
+    
+    .three-phone {
+        background: #F8F9FA;
+    }
+    
+    .left-box {
+        background: #02a8de;
+        padding: 10px !important;
+    }
+    
+    .left-box i {
+        font-size: 30px;
+        padding-top: 4px;
+    }
+    
+    .right-box {
+        background: #16baef;
+    }
+    
+    .box-param {
+        padding: 10px 25px !important;
+    }
+    
+    .right-box p {
+        padding-top: 4px;
+        margin-bottom: 0px !important;
+    }
+    
+    .face p {
+        color: #a67878;
+    }
+    
+    .motion {
+        background-image: url("https://i.imgur.com/9f1llgS.png?1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .glitch {
+        font-size: 45px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+        animation: glitch 500ms infinite;
+        position: relative;
+    }
+    
+    .glitch span {
+        position: absolute;
+        top: 0;
+        botton: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .glitch span:first-child {
+        animation: glitch 650ms infinite;
+        z-index: 1;
+        clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0 100%);
+        transform: translate(0px, 3px) rotate(-1deg);
+        opacity: 0.8;
+    }
+    
+    .glitch span:last-child {
+        animation: glitch 450ms infinite;
+        z-index: 10;
+        clip-path: polygon(70% 10%, 100% 90%, 0% 10%, 100% 0%);
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    /*Animation effect for glitch*/
+    
+    @keyframes glitch {
+        0% {
+            text-shadow: 0.05em 0 0 rgba(24, 2, 2, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(208, 208, 226, 0.75);
+        }
+        14% {
+            text-shadow: 0.05em 0 0 rgba(216, 195, 195, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(231, 231, 231, 0.75);
+        }
+        15% {
+            text-shadow: -0.05em -0.025em 0 rgba(238, 220, 220, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(168, 241, 238, 0.75);
+        }
+        49% {
+            text-shadow: -0.05em -0.025em 0 rgba(238, 165, 165, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(198, 198, 204, 0.75);
+        }
+        50% {
+            text-shadow: 0.025em 0.05em 0 rgba(221, 191, 191, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(205, 205, 211, 0.75);
+        }
+        99% {
+            text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(226, 226, 236, 0.75);
+        }
+        100% {
+            text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(231, 231, 241, 0.75);
+        }
+    }
+    
+    .content-sense {
+        color: #fff;
+        line-height: 40px;
+    }
+    
+    .content {
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    .centerplease {
+        margin: 0 auto;
+        max-width: 270px;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .question {
+        position: relative;
+        background: #c2e6c2;
+        margin: 0;
+        padding: 10px 10px 10px 50px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .answers {
+        background: #e2dddd;
+        padding: 0px 15px;
+        margin: 5px 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: .7s ease;
+        -moz-transition: .7s ease;
+        -o-transition: .7s ease;
+        transition: .7s ease;
+    }
+    
+    .questions:checked~.answers {
+        max-height: 500px;
+        opacity: 1;
+        padding: 15px;
+    }
+    
+    .plus {
+        position: absolute;
+        margin-left: 10px;
+        z-index: 5;
+        font-size: 2em;
+        line-height: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+    }
+    
+    .questions:checked~.plus {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .questions {
+        display: none;
+    }
+    
+    .box-spec {
+        box-shadow: 0 0 0 1px #d8d8d8;
+    }
+    
+    .box-spec h4 {
+        background: #3c9bcd;
+        padding: 10px;
+    }
+    
+    .bdbot {
+        border-bottom: 1px solid #d8d8d8;
+    }
+    
+    .bg-ct {
+        background: #f6f6f6;
+    }
+</style>
+
+<body>
+    <div class="banner">
+        <video autoplay muted loop width="100%">
+            <source  src="https://i.imgur.com/zmQA7fN.mp4" type="video/mp4"/>
+          </video>
+        <!-- <iframe width="100%" height="854" src="https://www.youtube.com/embed/_YbmMBeIufU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+        <!-- <iframe width="1519" height="854" src="https://www.youtube.com/embed/W6wuPyR4VC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <section class="my-5 style-pixel">
+        <h1 class="text-center">Pixel Styles</h1>
+        <p class="text-center">
+            You can pick from a set of Pixel 4 themes, which change things like the wallpaper and the shape and font of the app icons. <br> If you don't like the default styles you can create your own.
+        </p>
+        <p class="text-center pt-3"><img class="img-fluid" src="https://i.imgur.com/YhYDmeY.jpg?1" alt=""></p>
+        <p class="text-center pt-3">The Pixel 4's Come Alive wallpapers interact with your movement. </p>
+    </section>
+    <section class="my-5 three-phone">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-fluid" width="100%" src="https://i.imgur.com/WQy2RyG.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="text-center">
+                        Parameter
+                    </h2>
+
+                    <div class="box-param text-center d-flex mt-5">
+                        <div class="left-box p-2">
+                            <i class="fas fa-microchip text-white"></i>
+                        </div>
+                        <div class="right-box w-100 p-2">
+                            <p class="text-white text-left">Processor: Qualcomm SDM855 Snapdragon 855 Octa-</p>
+                        </div>
+                    </div>
+                    <div class="box-param text-center d-flex">
+                        <div class="left-box p-2" style="padding: 8px !important;">
+                            <i class="fas fa-memory text-white"></i>
+                        </div>
+                        <div class="right-box w-100 p-2">
+                            <p class="text-white text-left">RAM: 6 GB</p>
+                        </div>
+                    </div>
+                    <div class="box-param text-center d-flex">
+                        <div class="left-box p-2" style="padding:8px 6px !important;">
+                            <i class="fas fa-tv text-white"></i>
+                        </div>
+                        <div class="right-box w-100 p-2">
+                            <p class="text-white text-left">Display: 6.3 inches</p>
+                        </div>
+                    </div>
+                    <div class="box-param text-center d-flex">
+                        <div class="left-box p-2" style="padding: 5px 14px !important;">
+                            <i class="fas fa-sd-card text-white"></i>
+                        </div>
+                        <div class="right-box w-100 p-2">
+                            <p class="text-white text-left">Storage: 64 GB, 128 GB</p>
+                        </div>
+                    </div>
+                    <div class="box-param text-center d-flex">
+                        <div class="left-box p-2">
+                            <i class="fas fa-camera-retro text-white"></i>
+                        </div>
+                        <div class="right-box w-100 p-2">
+                            <p class="text-white text-left"> Camera: 12.2 MP (wide) + 16 MP (telephoto) 2x optical</p>
+                        </div>
+                    </div>
+                    <div class="box-param text-center d-flex">
+                        <div class="left-box p-2">
+                            <i class="fas fa-charging-station text-white"></i>
+                        </div>
+                        <div class="right-box w-100 p-2">
+                            <p class="text-white text-left">Battery: Non-removable Li-Po 3700 mAh battery + Fast</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5 face">
+        <h2 class="text-center">FACE UNLOCK</h2>
+        <p class="text-center mb-5">FACE UNLOCK FEELS FASTER IN LARGE PART BECAUSE IT DEFAULTS TO SKIPPING THE LOCK SCREEN ENTIRELY</p>
+        <p class="text-center mt-3"><img class="img-fluid" src="https://i.imgur.com/t0rwRph.png?1" alt=""></p>
+        <p class="text-center">
+            The other reason that face unlock feels fast is a clever use of Google’s other new sensor technology in the Pixel 4: the Motion Sense radar chip.
+        </p>
+    </section>
+
+    <section class="motion py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-4">
+                    <!-- <h1 class="text-white">
+                        Motion Awareness
+                    </h1> -->
+                    <h1 class="glitch">
+                        <span aria-hidden="true">Motion Sense</span>
+                        <span aria-hidden="true">Motion Sense</span> Motion Sense
+                        <span aria-hidden="true">Motion Sense</span>
+                    </h1>
+
+                    <p class="content-sense  pt-3">
+                        Motion Sense is based on a technology Google has been developing for years called Project Soli. It’s radar on your phone, literally, and in theory it could enable incredibly interesting ways to interact with software. It can apparently detect movement
+                        as subtle as the flutter of a butterfly wing, and potentially even your heartbeat.
+                        <br>
+                        <br> It could do all that, but in this very first use of the technology, it does not. Google has only chosen to implement three types of movements for Motion Sense to detect, and they’re all very broad gestures.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center">
+                        <img height="600px" src="https://i.imgur.com/MDuMLIv.gif" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 spec-sec">
+        <h1 class="text-center my-5">
+            SPECIFICATIONS
+        </h1>
+        <div class="container">
+            <div class="box-spec">
+                <h4 class="text-white">General</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Brand:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Google
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Model:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Pixel 4 XL
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Release date:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        15th October 2019
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Dimensions (mm):
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        160.40 x 75.10 x 8.20
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Battery capacity (mAh):
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        3700
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Body type:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Glass
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Colours:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Just Black, Oh So Orange
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">Display</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Screen size (inches):
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        6.30
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Touchscreen:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Yes
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Resolution:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        1440x3040 pixels
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Pixels per inch (PPI):
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        537
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">HARDWARE</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Processor:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        octa-core
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Processor make:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Qualcomm Snapdragon 855
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        RAM:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        6GB
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Expandable storage:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        64GB
+                    </div>
+                </div>
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">Camera</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Rear camera:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        16-megapixel (f/2.4, 1.0-micron) + 12.2-megapixel (f/1.7, 1.4-micron)
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Rear flash:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Yes
+                    </div>
+                </div>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Front camera:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        8-megapixel (f/2.0, 1.22-micron)
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="box-spec">
+                <h4 class="text-white">Software</h4>
+                <div class="row mx-0 bdbot bg-ct">
+                    <div class="col-md-4 col-sm-4 col-4 p-2">
+                        Operating system:
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-8 p-2">
+                        Android 10
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <div>
+        <img class="img-fluid" src="https://i.imgur.com/RMVampZ.png?1" alt="">
+    </div>
+    <section class="faq pt-5">
+        <div class='centerplease'>
+            FAQ
+        </div>
+        <br>
+
+        <div class="container my-5">
+            <div class="content justify-content-center">
+                <div>
+                    <input type="checkbox" id="question1" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question1" class="question">
+                        How long will Pixel 4 XL Get updates?
+                    </label>
+                    <div class="answers">
+                        According to an updated support page, Google's new Pixel 4 and Pixel 4 XL will receive security and Android updates until October 2022. This means that the Pixel 4 and 4 XL will get Android 11, Android 12 and Android 13, according to Google's support
+                        page listing.
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="question2" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question2" class="question">
+                        Is the Google Pixel 4 XL discontinued?
+                    </label>
+                    <div class="answers">
+                        Days after announcing the Pixel 4a, Google has quietly discontinued sales of the Pixel 4 and Pixel 4 XL. The move, noted earlier by The Verge, represents an extremely truncated life cycle for a Google flagship — around half of the 18 months the company
+                        continued to sell its two predecessors
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="question3" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question3" class="question">
+                        Will Pixel 3 XL get Android 12?
+                    </label>
+                    <div class="answers">
+                        Unfortunately, the Pixel 2 and Pixel 2 XL will not receive Android 12; Android 11 was their last update. That means the Pixel 3 and Pixel 3 XL are next on the chopping block, making Android 12 potentially their last hurrah.
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="question4" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question4" class="question">
+                        Will Pixel 4 be restocked?
+                    </label>
+                    <div class="answers">
+                        Will Pixel 4 be restocked? It's official. Google has pulled the plug on the Pixel 4 and Pixel 4 XL less than a year after their launch. The two flagships are no longer available on the Google Store, and the company will not be restocking them again. ...
+                        Google Store has sold through its inventory and completed sales of Pixel 4 [and] 4 XL.
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="question5" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question5" class="question">
+                        Are they discontinuing Google pixel?
+                    </label>
+                    <div class="answers">
+                        Google on Friday denied reports that said its next phone, the Pixel 5a, is canceled and said the phone will launch later this year in the U.S. and Japan. The phone has not yet been officially announced, and this is the first time Google has confirmed
+                        it exists.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js" integrity="sha512-cJ7aOLpXbec1Km9craM6xL6UOdlWf9etIz7f+cwQv2tuarLm3PLb3dv3ZqIK++SE4ui+EE0nWqKB0dOaAOv9gQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>
