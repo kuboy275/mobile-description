@@ -15,10 +15,71 @@
             font-family: 'Noto Sans Display', sans-serif;
         }
         
-        .design .title .line {
-            width: 100%;
-            height: 2px;
-            background: #000;
+        header {
+            background-image: url(https://i.imgur.com/4zlfm2b.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 230px 0;
+        }
+        
+        .design {
+            background: linear-gradient(to bottom, #0C0E16, #414345);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        .design .carousel-item {
+            border-radius: 20px;
+            background: linear-gradient(to right, #283048, #859398);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        .design .carousel-indicators {
+            bottom: -15px;
+        }
+        
+        .design .carousel-indicators li {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            opacity: .7;
+            margin: 0 10px;
+        }
+        
+        .design .carousel-indicators li.active {
+            opacity: 1;
+        }
+        
+        .design .carousel-indicators li:nth-child(1) {
+            background-color: #000;
+        }
+        
+        .design .carousel-indicators li:nth-child(2) {
+            background-color: #58556B;
+        }
+        
+        .design .carousel-indicators li:nth-child(3) {
+            background-color: #6A92C0;
+        }
+        
+        .design .carousel-indicators li:nth-child(4) {
+            background-color: #A5A7AB;
+        }
+        
+        .design .carousel-indicators li:nth-child(5) {
+            background-color: #A48D76;
+        }
+        
+        .design .carousel-indicators li:nth-child(6) {
+            background-color: #B98F90;
+        }
+        
+        .info img {
+            transform: skew(0, -15deg);
+        }
+        
+        .border-rd-20 {
+            border-radius: 20px;
         }
         
         .banner {
@@ -29,14 +90,8 @@
             background-position: center;
         }
         
-        .banner .banner-sub {
-            background-image: url(https://i.imgur.com/ohX1Wdr.png);
-            height: 450px;
-            margin: 0 auto;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-attachment: fixed;
+        .screen {
+            background: #000;
         }
     </style>
 
@@ -45,19 +100,16 @@
 
 <body>
 
-    <header class="py-5">
+    <header>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
-                    <div class="title">
+                <div class="col-sm-12 col-md-12 col-lg-5 mb-5">
+                    <div class="title text-white">
                         <h1>Samsung Galaxy S8 </h1>
                         <h6>
                             Every year on and Samsung's outgoing flagship remains a technical marvel
                         </h6>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <img src="https://i.imgur.com/i7Jemh1.jpg?1" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -66,74 +118,87 @@
     <!-- design -->
     <div class="design py-5">
         <div class="container">
-            <div class="title">
-                <h1 class="mb-3">Design</h1>
-                <div class="line"></div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-sm-2">
-                    <h3 class="mb-3">Color</h3>
-                </div>
-                <div class="col-sm-10">
-                    <div class="row">
-                        <div class="col-6 col-sm-2 text-center">
-                            <img src="https://i.imgur.com/k80P6kW.png" class="mb-2 img-fluid" alt="">
-                            <p>Midnight Black</p>
+            <div class="row align-items-center">
+                <div class="col-sm-7">
+                    <div id="carouselExampleIndicators" class="carousel slide border-rd-20" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item py-5 text-center  active">
+                                <img class=" img-fluid" src="https://i.imgur.com/k80P6kW.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item py-5 text-center">
+                                <img class=" img-fluid" src="https://i.imgur.com/OdE7SPX.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item py-5 text-center">
+                                <img class=" img-fluid" src="https://i.imgur.com/ywhnpYl.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item py-5 text-center">
+                                <img class=" img-fluid" src="https://i.imgur.com/Hk7blKE.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item py-5 text-center">
+                                <img class=" img-fluid" src="https://i.imgur.com/Av4YWA6.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item py-5 text-center">
+                                <img height="350px" width="auto" src="https://i.imgur.com/IPjcCJP.png" alt="Third slide">
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-2 text-center">
-                            <img src="https://i.imgur.com/OdE7SPX.png" class="mb-2 img-fluid" alt="">
-                            <p>Orchid Gray </p>
-                        </div>
-                        <div class="col-6 col-sm-2 text-center">
-                            <img src="https://i.imgur.com/ywhnpYl.png" class="mb-2 img-fluid" alt="">
-                            <p>Coral Blue</p>
-                        </div>
-                        <div class="col-6 col-sm-2 text-center">
-                            <img src="https://i.imgur.com/Hk7blKE.png" class="mb-2 img-fluid" alt="">
-                            <p>Arctic Silver </p>
-                        </div>
-                        <div class="col-6 col-sm-2 text-center">
-                            <img src="https://i.imgur.com/Av4YWA6.png" class="mb-2 img-fluid" alt="">
-                            <p>Maple Gold </p>
-                        </div>
-                        <div class="col-6 col-sm-2 text-center">
-                            <img src="https://i.imgur.com/IPjcCJP.png" class="mb-2 img-fluid" alt="">
-                            <p>Rose Pink </p>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
+                </div>
+                <div class="col-sm-5 text-white">
+                    <h3 class="mb-3">Color</h3>
+                    <h1>
+                        Favorite Personality Color Range
+                    </h1>
+                    <h6>
+
+                        Grab all eyes and stand out with a smartphone designed just for you. With trendy color finishes and luxurious matte finish, each fan can confidently express their own personality.
+                    </h6>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- info -->
-    <div class="info py-5 bg-light">
+    <div class="info py-5 text-center ">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-9 py-5">
-                    <h3 class="text-center my-5">
-                        The launch of the Infinity Display, the Galaxy S8 revolutionized the way phones were crafted, breaking through the confines of the smartphone screen. It's the beginning of a stunning, immersive screen that's easy to hold in one hand.
-                    </h3>
-                </div>
-            </div>
+            <h3 class="my-5">
+                The launch of the Infinity Display, the Galaxy S8 revolutionized the way phones were crafted, breaking through the confines of the smartphone screen. It's the beginning of a stunning, immersive screen that's easy to hold in one hand.
+            </h3>
+            <img src="https://i.imgur.com/2I6vqpw.jpg" alt="" class="img-fluid mt-5">
         </div>
     </div>
 
     <!-- screen -->
-    <div class="screen py-5">
+    <div class="screen mt-5 py-5">
         <div class="container">
-            <div class="title text-center mb-3">
-                <h1 class="mb-3">Dimensions & Weight</h1>
-                <p>
-                    A cleaner Samsung interface comes with nice changes: swipe up on the home screen to see apps, touch and hold an app icon for more options
-                </p>
-            </div>
-            <div class="row text-center align-items-center">
-                <div class="col-sm-6">
-                    <img src="https://i.imgur.com/OlQn85j.png" class="img-fluid mt-3" alt="">
+            <div class="row align-items-center">
+                <div class="col-sm-6 text-white">
+                    <h3>AP AND RAM </h3>
+                    <h1>
+                        Impressively Fast Processing Speed</h1>
+                    <p>
+                        Get the most out of data speeds and cloud content with the latest innovative chipset on the Galaxy S8. 10 All of this combined with an advanced NPU elevates performance, giving you a seamless experience when switching between apps, crystal-clear picture
+                        quality when watching streaming and Impressive smooth game screen when fighting.
+
+                    </p>
                 </div>
                 <div class="col-sm-6">
-                    <img src="https://i.imgur.com/PnjvFM2.jpg?1" class="img-fluid mt-4" alt="">
+                    <img src="https://i.imgur.com/oukn6Rf.jpg?1" class="img-fluid mt-4" alt="">
                 </div>
             </div>
         </div>
@@ -144,6 +209,9 @@
     <div class="experience py-5">
         <div class="container">
             <div class="row align-items-center text-center text-lg-left">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <img src="https://i.imgur.com/LTslM05.jpg" alt="" class="img-fluid">
+                </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
                     <div class="title">
                         <h1>
@@ -154,27 +222,28 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <img src="https://i.imgur.com/LTslM05.jpg" alt="" class="img-fluid">
-                </div>
             </div>
         </div>
     </div>
 
     <!-- watter -->
-    <div class="water">
+    <div class="water bg-light py-5">
         <div class="container">
-            <h1 class="text-center mb-5">
-                Not afraid of water ingress
-            </h1>
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-12 col-lg-7 mb-5 mb-lg-0">
-                    <img src="https://i.imgur.com/Ncc4emb.jpg" alt="" class="rounded img-fluid mt-5">
+            <div class="text-center">
+                <h3>
+                    Not afraid of water ingress
+                </h3>
+                <h1 class="text-uppercase my-4">water resistance </h1>
+                <h3>
+                    Can withstand water up to 1.5m depth for about 30 minutes
+                </h3>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-10 text-center">
+                    <img src="https://i.imgur.com/H9h0s9h.gif" width="100%" height="500" class="border-rd-20 mt-5">
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-5">
-                    <h6 class="text-uppercase mb-5">water resistance </h6>
-                    <h4>
-                        Can withstand water up to 1.5m depth for about 30 minutes</h4>
+
                 </div>
             </div>
         </div>
@@ -206,9 +275,37 @@
         </div>
     </div>
 
-    <div class="banner">
+    <!-- camera -->
+    <div class="camera py-5">
         <div class="container">
-            <div class="banner-sub"></div>
+            <div class="text-center">
+                <h1>
+                    Camera on Samsung Galaxy S8</h1>
+                <p>
+                    The device is equipped with a single camera with 12 MP resolution, OIS anti-shake, large f/1.7 aperture that captures more light for extremely sharp low-light photos.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="https://i.imgur.com/S1mIYE7.jpg" alt="" class="img-fluid border-rd-20">
+                </div>
+                <div class="col-sm-12 mt-4">
+                    <div class="row align-items-end">
+                        <div class="col-sm-6">
+                            <img src="https://i.imgur.com/Tx23Yf1.jpg" alt="" class="img-fluid border-rd-20">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="https://i.imgur.com/5TG2OPk.jpg" alt="" class="img-fluid border-rd-20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container text-center">
+            <img src="https://i.imgur.com/tk52rEs.png" alt="" class="img-fluid">
         </div>
     </div>
 
